@@ -36,6 +36,6 @@ services:
     container_name: book-web-1
     ports:
       - 17000:80
-    # Api컨테이너 ur(/로 끝나야 한다)
+    # Api컨테이너 url(/로 끝나야 한다)
     command: ApiUrl=http://host.docker.internal:5000/
     restart: always

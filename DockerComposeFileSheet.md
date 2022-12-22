@@ -1,8 +1,5 @@
-# 도커컴포즈파일
-
-## 컴포즈 파일 형식
-```
-# docker-compose.yml
+# 도커컴포즈 파일 포맷
+```yml
 version: '3'
 
 services:
