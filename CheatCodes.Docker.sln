@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookApi", "BookApi\BookApi.csproj", "{DD017661-2C27-46D1-AE2C-4B4C7C7BE7E1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookWebApp", "BookWebApp\BookWebApp.csproj", "{E7FE969A-FE14-43A0-B4DD-5DCE2628FFE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{620A8389-4F3D-483F-9DE5-95874C3C5239}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		README.md = README.md
+		DockerComposeFileSheet.md = DockerComposeFileSheet.md
+		DockerfileSheet.md = DockerfileSheet.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD017661-2C27-46D1-AE2C-4B4C7C7BE7E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD017661-2C27-46D1-AE2C-4B4C7C7BE7E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD017661-2C27-46D1-AE2C-4B4C7C7BE7E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD017661-2C27-46D1-AE2C-4B4C7C7BE7E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7FE969A-FE14-43A0-B4DD-5DCE2628FFE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7FE969A-FE14-43A0-B4DD-5DCE2628FFE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7FE969A-FE14-43A0-B4DD-5DCE2628FFE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7FE969A-FE14-43A0-B4DD-5DCE2628FFE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F267D214-6CCC-4DE0-9829-EBD356228D8E}
+	EndGlobalSection
+EndGlobal

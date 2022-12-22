@@ -1,0 +1,41 @@
+version: '3.7'
+services:
+  book-nginx:
+    image: book-nginx:test
+    build:
+      context: .
+      dockerfile: Nginx/Dockerfile
+    container_name: book-nginx-1
+    ports:
+      - 5000:80
+      - 5001:443
+    environment:
+      - API_PORT=16000
+      - WEB_PORT=17000
+    restart: always
+
+  book-api:
+    image: book-api:test
+    build:
+      context: .
+      dockerfile: BookApi/Dockerfile
+    depends_on:
+      - book-nginx
+    container_name: book-api-1
+    ports:
+      - 16000:80
+    restart: always
+
+  book-web:
+    image: book-web:test
+    build:
+      context: .
+      dockerfile: BookWebApp/Dockerfile
+    depends_on:
+      - book-api
+    container_name: book-web-1
+    ports:
+      - 17000:80
+    # Api컨테이너 ur(/로 끝나야 한다)
+    command: ApiUrl=http://host.docker.internal:5000/
+    restart: always
