@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   book-nginx:
-    image: book-nginx:test
+    image: book-nginx:v1
     build:
       context: .
       dockerfile: Nginx/Dockerfile
@@ -15,7 +15,7 @@ services:
     restart: always
 
   book-api:
-    image: book-api:test
+    image: book-api:v1
     build:
       context: .
       dockerfile: BookApi/Dockerfile
@@ -27,7 +27,7 @@ services:
     restart: always
 
   book-web:
-    image: book-web:test
+    image: book-web:v1
     build:
       context: .
       dockerfile: BookWebApp/Dockerfile
