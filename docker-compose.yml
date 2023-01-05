@@ -37,5 +37,5 @@ services:
     ports:
       - 17000:80
     # Api컨테이너 url(/로 끝나야 한다)
-    command: ApiUrl=http://host.docker.internal:5000/
+    command: API_URL=http://host.docker.internal:5000/
     restart: always

@@ -8,8 +8,11 @@ namespace BookWebApp.Controllers
         private readonly HttpClient _httpClient = new HttpClient();
         public BooksController(IConfiguration configuration)
         {
-            var apiUrl = configuration.GetValue<string>("ApiUrl");
-            _httpClient.BaseAddress = new Uri(apiUrl + "api/");
+            var apiUrl = configuration.GetValue<string>("API_URL");
+            if(apiUrl.EndsWith("/"))
+                _httpClient.BaseAddress = new Uri(apiUrl + "api/");
+            else
+                _httpClient.BaseAddress = new Uri(apiUrl + "/api/");
         }
 
         public async Task<IActionResult> Index()

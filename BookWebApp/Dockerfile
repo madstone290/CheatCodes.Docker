@@ -20,4 +20,4 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "BookWebApp.dll"]
-CMD ["ApiUrl=http://host.docker.internal:16000/"]
+CMD ["API_URL=http://host.docker.internal:16000/"]
